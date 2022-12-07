@@ -1,4 +1,4 @@
-package com.beatrice.calculatorapp.presentation.presentation.components
+package com.beatrice.calculatorapp.presentation.view.components
 
 import android.content.Context
 import android.widget.LinearLayout.LayoutParams
