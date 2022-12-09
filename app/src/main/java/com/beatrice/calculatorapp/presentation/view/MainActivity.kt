@@ -9,6 +9,7 @@ import androidx.core.content.ContextCompat
 import androidx.core.view.setMargins
 import com.beatrice.calculatorapp.R
 import com.beatrice.calculatorapp.presentation.view.components.CalculatorLabelTv
+import com.beatrice.calculatorapp.presentation.view.components.CalculatorSymbolsLayout
 import com.beatrice.calculatorapp.presentation.view.components.CalculatorTextInputLayoutLayout
 
 class MainActivity : AppCompatActivity() {
@@ -32,12 +33,15 @@ class MainActivity : AppCompatActivity() {
         val num1Til = CalculatorTextInputLayoutLayout(this)
         val num2Label = CalculatorLabelTv(this, "SecondNumber")
         val num2Til = CalculatorTextInputLayoutLayout(this)
+        val symbolsLayout = CalculatorSymbolsLayout(this)
         parentLayout.apply {
             addView(num1Label)
             addView(num1Til)
             addView(num2Label)
             addView(num2Til)
+            addView(symbolsLayout)
         }
+
         setContentView(parentLayout)
     }
 }

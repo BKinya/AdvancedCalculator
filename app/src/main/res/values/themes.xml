@@ -14,6 +14,7 @@
         <!-- Customize your theme here. -->
 
         <item name="customTextInputStyle">@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox</item>
+        <item name="customButtonStyle">@style/Widget.MaterialComponents.Button.OutlinedButton</item>
     </style>
 
     <style name="AppTheme" parent="Theme.CalculatorApp">
