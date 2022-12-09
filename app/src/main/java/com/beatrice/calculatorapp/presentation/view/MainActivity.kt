@@ -34,11 +34,13 @@ class MainActivity : AppCompatActivity() {
         val num2Label = CalculatorLabelTv(this, "SecondNumber")
         val num2Til = CalculatorTextInputLayoutLayout(this)
         val symbolsLayout = CalculatorSymbolsLayout(this)
+        val symbolsLabel = CalculatorLabelTv(this, "Operations")
         parentLayout.apply {
             addView(num1Label)
             addView(num1Til)
             addView(num2Label)
             addView(num2Til)
+            addView(symbolsLabel)
             addView(symbolsLayout)
         }
 

@@ -15,14 +15,18 @@ fun CalculatorSymbolsLayout(context: Context): LinearLayout = LinearLayout(conte
 
     orientation = LinearLayout.HORIZONTAL
     layoutParams = params
-    gravity = Gravity.CENTER_HORIZONTAL
+    gravity = Gravity.CENTER
 
     val addSymbol = CalculatorSymbol(context, drawable(R.drawable.ic_add))
+
     val minusSymbol = CalculatorSymbol(context, drawable(R.drawable.minus))
     val multiplySymbol = CalculatorSymbol(context, drawable(R.drawable.close))
     val divideSymbol = CalculatorSymbol(context, drawable(R.drawable.slash_forward))
     addView(addSymbol)
+    addView(CalculatorSpacer(context = context ,width = 84))
     addView(minusSymbol)
+    addView(CalculatorSpacer(context = context ,width = 84))
     addView(multiplySymbol)
+    addView(CalculatorSpacer(context = context ,width = 84))
     addView(divideSymbol)
 }
