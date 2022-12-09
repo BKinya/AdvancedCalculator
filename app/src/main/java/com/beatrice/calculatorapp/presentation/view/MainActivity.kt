@@ -29,10 +29,15 @@ class MainActivity : AppCompatActivity() {
 
 
         val num1Label = CalculatorLabelTv(this, "First Number")
+        val num1Til = CalculatorTextInputLayoutLayout(this)
         val num2Label = CalculatorLabelTv(this, "SecondNumber")
-        parentLayout.addView(num1Label)
-        parentLayout.addView(CalculatorTextInputLayoutLayout(this))
-        parentLayout.addView(num2Label)
+        val num2Til = CalculatorTextInputLayoutLayout(this)
+        parentLayout.apply {
+            addView(num1Label)
+            addView(num1Til)
+            addView(num2Label)
+            addView(num2Til)
+        }
         setContentView(parentLayout)
     }
 }
